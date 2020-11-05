@@ -8,16 +8,21 @@
         <title>Spotify-Web-App</title>
     </head>
     <body>
-
+        <!-- app container -->
         <div class="wrapper d-flex">
-
+            <!-- sidebar -->
             <aside class="main_menu">
                 <h1><img src="assets/img/logo.svg" alt=""></h1>
             </aside>
+            <!-- /sidebar -->
 
+            <!-- album art -->
             <main class="d-flex album_art">
 
-                <div id="subscribe_bar"></div>
+                <div class="d-flex" id="subscribe_bar">
+                    <button id="subscribe_btn">effettua l'upgrade</button>
+                </div>
+
                 <div id="album_art_menu">
                     <ul class="d-flex">
                         <li><a href="">in evidenza</a></li>
@@ -35,11 +40,15 @@
                 <section class="d-flex" id="popular_artist"><h2>Popular Artists</h2></section>
                      
             </main>
+            <!-- album art -->
+
 
             <footer>
                 <div class="player"></div>
             </footer>
         </div>
+        <!-- /app container -->
+
 
       
         
