@@ -120,8 +120,12 @@ h1 img {
 }
 
 /* created for section */
-#created_for .thumbnail {
+#created_for .thumbnail , #popular_artist .thumbnail{
     margin-right: 20px;
+}
+
+#popular_artist img {
+    border-radius: 50%;
 }
 
 
