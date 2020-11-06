@@ -42,10 +42,9 @@ h4 {
 }
 
 h5 {
-    margin-top: -10px;
     color: gray;
-    margin-bottom: 20px;
     text-transform: capitalize;
+    padding: 10px 0;
 }
 
 /* sidebar */
@@ -59,12 +58,15 @@ aside.main_menu {
 }
 
 #logo {
-    padding: 20px 0px;
+    padding: 20px;
     width: 65%;
 }
 
 aside ul {
     list-style: none;  
+}
+
+#ul_utente {
     padding: 0px 20px;
 }
 
@@ -78,11 +80,15 @@ aside li a {
     padding-right: 5px;
 }
 
-aside li {
-    padding-top: 5px;
+aside .li_menu {
+    padding: 0px 20px;
 }
 
-aside li:active {
+aside .li_menu:hover , aside .li_menu:active , aside .li_menu:visited {
+    border-left: 2px solid greenyellow;
+}
+
+aside .activated {
     border-left: 2px solid greenyellow;
 }
 
@@ -146,8 +152,8 @@ aside h6 {
     font-size: 1rem;
     padding-left: 5px;
 }
-/* subscribe bar */
 
+/* subscribe bar */
 #subscribe_bar {
     position: fixed;
     top: 0;
@@ -192,6 +198,15 @@ aside h6 {
     padding: 10px;
     font-size: 0.8rem;
     font-weight: 600;
+}
+
+#recent_title {
+    padding-top: 0;
+}
+
+.album_art h5 {
+    margin-top: -20px;
+    margin-bottom: 25px;
 }
 
 li > hr {
