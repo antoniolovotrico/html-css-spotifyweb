@@ -78,6 +78,14 @@ aside li a {
     padding-right: 5px;
 }
 
+aside li {
+    padding-top: 5px;
+}
+
+aside li:active {
+    border-left: 2px solid greenyellow;
+}
+
 aside h3 {
     text-transform: uppercase;
     padding-left: 10px;
@@ -186,22 +194,33 @@ aside h6 {
     font-weight: 600;
 }
 
-#album_art_menu a:active {
-    border-bottom: 2px solid greenyellow;
+li > hr {
+   border: 1px solid  #141922;
+   margin-left: auto; 
+   margin-right: auto;
+   margin-top: 3px;
+   margin-bottom: 40px; 
 }
 
-#activate-div {
-    display:none
-}
+li:hover hr , li:active hr , li:visited hr {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    margin-bottom: 40px;
+    border: 1px solid greenyellow; 
+    border-radius: 10px;     
+ }
 
-.my-div {
-    border-bottom: 2px solid greenyellow;
-    width: 20%;
+#selected_item {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    border: 1px solid greenyellow; 
+    border-radius: 10px; 
+    margin-bottom: 40px;
 }
-
-#activate-div:checked ~ label .my-div {
-    border-bottom: none;
-} 
 
 .album_art {
     background-color: #141922;
