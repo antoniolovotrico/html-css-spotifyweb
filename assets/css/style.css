@@ -17,7 +17,7 @@ body {
 .wrapper {
     background-color: grey;
     color: ivory;  
-    height: 100vh;
+    height: 100%;
 }
 
 .thumbnail {
@@ -51,20 +51,19 @@ h5 {
 /* sidebar */
 aside.main_menu {
     background-color: black;  
-    height: 100%;
+    height: auto;
     z-index: 90;
-    overflow-y: auto;
-    overflow-x: hidden;
+    width: 300px;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-h1 img {
-    width: 50%;
-    margin: 20px;
+#logo {
+    padding: 20px 0px;
 }
 
 aside ul {
-    list-style: none;
-    flex-direction: column;
+    list-style: none;  
     padding: 0px 20px;
 }
 
@@ -72,15 +71,18 @@ aside li a {
     text-decoration: none;
 }
 
-aside li img {
+.btn_main {
     width: 35px;
     vertical-align: middle;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 aside h3 {
     text-transform: uppercase;
     padding-left: 10px;
+}
+aside h4 {
+    text-transform: uppercase;    
 }
 
 aside h5 {
@@ -88,9 +90,14 @@ aside h5 {
     text-transform: capitalize; 
 }
 
-aside h4 {
-    text-transform: uppercase;    
+aside h6 {
+    display: inline-block;  
+    text-transform: capitalize; 
+    color: gray;
+    font-size: 0.8rem;
 }
+
+
 
 #playlist {
     font-size: 1rem;
@@ -102,15 +109,36 @@ aside h4 {
     background-color: black;
     font-size: 2.5rem;
     vertical-align: middle;
-    padding-right: 10px;
+    padding-right: 5px;
     
 }
 
-#utente {
-    
-    margin-bottom: 0;
+#btn_download {
+    width: 20px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+#download {   
+    padding-top: 100px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;  
+}
+
+#utente {   
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+
+#profile {
+    width: 10%;
+}
+
+#john {
+    font-size: 1rem;
+    padding-left: 5px;
 }
 /* subscribe bar */
+
 #subscribe_bar {
     position: fixed;
     top: 0;
@@ -144,6 +172,8 @@ aside h4 {
     list-style: none;
     text-transform: uppercase;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 #album_art_menu li a {
@@ -162,17 +192,17 @@ aside h4 {
     padding-top: 50px;
     flex-direction: column;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     
 }
 
 /* recently_played section */
-#recently_played .d-flex{
-    justify-content: space-between;
+#recently_played .d-flex { 
+    flex-wrap: wrap;
 }
 
 /* created for section & popular*/
-#created_for .thumbnail , #popular_artist .thumbnail{
+.thumbnail {
     margin-right: 20px;
 }
 
