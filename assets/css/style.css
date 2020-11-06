@@ -30,6 +30,41 @@ body {
     width: 100%;
 }
 
+.box_for_play {
+    position: relative;
+}
+
+.box_for_play:hover .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#popular_artist .box_for_play:hover .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+.play_icon {
+    display: none;
+}
+
+.box_for_play:hover .play_icon {
+    display: block;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);  
+}
+
 .thumbnail a {
     text-decoration: none;
 }
