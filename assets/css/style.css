@@ -22,22 +22,23 @@ body {
 
 .thumbnail {
     text-align: center;
-    
+    flex-basis: 21.3vh;
+    padding: 10px;
 }
 
 .thumbnail img{
-    width: 170px;
+    width: 100%;
 }
 
 .thumbnail a {
     text-decoration: none;
 }
 h2 {
-    padding: 30px 0;
+    padding: 30px 10px;
 }
 
 h4 {
-    padding: 20px 0;
+    padding: 20px 10px;
     color: white;
 }
 
@@ -52,7 +53,8 @@ aside.main_menu {
     background-color: black;  
     height: auto;
     z-index: 90;
-    width: 300px;
+    min-width: 225px;
+    max-width: 225px;
     justify-content: space-between;
     flex-direction: column;
 }
@@ -60,6 +62,10 @@ aside.main_menu {
 #logo {
     padding: 20px;
     width: 65%;
+}
+
+#logo_small {
+    display: none;
 }
 
 aside ul {
@@ -92,10 +98,6 @@ aside .activated {
     border-left: 2px solid greenyellow;
 }
 
-aside h3 {
-    text-transform: uppercase;
-    padding-left: 10px;
-}
 aside h4 {
     text-transform: uppercase;    
 }
@@ -128,15 +130,14 @@ aside h6 {
     
 }
 
-#btn_download {
-    width: 20px;
-    vertical-align: middle;
-    padding-right: 5px;
-}
 #download {   
     padding-top: 100px;
     padding-bottom: 10px;
     border-bottom: 1px solid grey;  
+}
+
+#download .btn_main {
+    width: 20px;
 }
 
 #utente {   
@@ -144,11 +145,11 @@ aside h6 {
     padding-top: 10px;
 }
 
-#profile {
+#utente .btn_main {
     width: 10%;
 }
 
-#john {
+#utente h5 {
     font-size: 1rem;
     padding-left: 5px;
 }
@@ -207,6 +208,7 @@ aside h6 {
 .album_art h5 {
     margin-top: -20px;
     margin-bottom: 25px;
+    padding: 10px;
 }
 
 li > hr {
@@ -241,7 +243,7 @@ li:hover hr , li:active hr , li:visited hr {
     background-color: #141922;
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 20px;
+    padding: 10px;
     padding-top: 50px;
     flex-direction: column;
     width: 100%;
@@ -254,11 +256,7 @@ li:hover hr , li:active hr , li:visited hr {
     flex-wrap: wrap;
 }
 
-/* created for section & popular*/
-.thumbnail {
-    margin-right: 20px;
-}
-
+/* popular section*/
 #popular_artist img {
     border-radius: 50%;
 }
@@ -277,3 +275,93 @@ footer {
     color: white;
     z-index: 100;
 }
+
+/* media query xs size 600px */
+@media screen and (max-width:600px) {
+    aside.main_menu { 
+        width: 10%;
+        min-width: unset;
+    }
+    aside h4 , aside h5 , aside h6 , aside .fas , #logo {
+      display: none;
+    }
+    #logo_small {
+      display: block;
+    }
+    .btn_main {
+        width: 100%;
+        vertical-align: middle;
+        padding: 10px;
+    }
+    
+    aside .li_menu {
+        padding: unset;
+    }
+    
+    aside .li_menu:hover , aside .li_menu:active , aside .li_menu:visited {
+        border-left: unset;
+    }
+    
+    aside .activated {
+        border-left: unset;
+    }
+    #download {   
+        padding-top: 100px;
+        padding-bottom: 10px;
+        border-bottom: unset; 
+    }
+    #download .btn_main {
+        width: 100%;
+        vertical-align: middle;
+        padding: 15px;
+    }  
+    #utente {   
+        padding-bottom: 100px;
+        padding-top: 10px;
+    }
+    
+    #utente .btn_main {
+        width: 100%;
+        vertical-align: middle;
+        padding: 10px;
+    }
+    #ul_utente {
+        padding: unset;
+    }
+    .thumbnail {
+        
+        flex-basis: 22.2vh;     
+    }
+}
+
+/* media query screen size portrait tablet 601-700px */
+@media all and (min-width: 601px) and (max-width: 700px) {
+    .thumbnail {   
+        flex-basis: 18vh;     
+    }
+}
+
+/* media query screen tablet 701-869px */
+@media all and (min-width: 701px) and (max-width: 869px) {
+    .thumbnail {   
+        flex-basis: 23.3vh;     
+    }
+}
+
+/* media query big tablet 870-992px */
+@media all and (min-width: 870px) and (max-width: 991px) {
+    .thumbnail {   
+        flex-basis: 16vh;     
+    }
+}
+
+/* media query small laptop size 992px */
+@media all and (min-width: 992px) and (max-width: 1199px) {
+    .thumbnail {   
+        flex-basis: 18vh;     
+    }
+}
+
+
+
+
