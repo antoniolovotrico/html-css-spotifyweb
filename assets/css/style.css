@@ -60,6 +60,7 @@ aside.main_menu {
 
 #logo {
     padding: 20px 0px;
+    width: 65%;
 }
 
 aside ul {
@@ -166,6 +167,7 @@ aside h6 {
 /* album art */
 #album_art_menu {
     padding-top: 50px;
+    
 }
 
 #album_art_menu ul {
@@ -173,7 +175,7 @@ aside h6 {
     text-transform: uppercase;
     justify-content: center;
     flex-wrap: wrap;
-    align-content: center;
+    align-content: space-around;
 }
 
 #album_art_menu li a {
@@ -183,6 +185,23 @@ aside h6 {
     font-size: 0.8rem;
     font-weight: 600;
 }
+
+#album_art_menu a:active {
+    border-bottom: 2px solid greenyellow;
+}
+
+#activate-div {
+    display:none
+}
+
+.my-div {
+    border-bottom: 2px solid greenyellow;
+    width: 20%;
+}
+
+#activate-div:checked ~ label .my-div {
+    border-bottom: none;
+} 
 
 .album_art {
     background-color: #141922;
