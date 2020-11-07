@@ -49,6 +49,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 #popular_artist .box_for_play:hover .overlay{
@@ -59,6 +60,7 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+    cursor: pointer;
 }
 .play_icon {
     display: none;
@@ -72,6 +74,7 @@ body {
     left: 50%;
     transform: translate(-50% , -50%); 
     color: white; 
+    cursor: pointer;
 }
 
 h2 {
@@ -134,6 +137,10 @@ aside .li_menu {
 
 aside .li_menu:hover , aside .li_menu:active , aside .li_menu:visited {
     border-left: 2px solid greenyellow;
+}
+
+aside .li_menu:hover h5 {
+    color: white;
 }
 
 aside .activated {
@@ -218,6 +225,11 @@ aside h6 {
     font-weight: 600;
 }
 
+#subscribe_btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 /* album art */
 .album_art {
     background-color: #141922;
@@ -274,7 +286,7 @@ li:hover hr , li:active hr , li:visited hr {
     margin-top: 3px;
     margin-bottom: 40px;
     border: 1px solid greenyellow; 
-    border-radius: 10px;     
+    border-radius: 10px;  
  }
 
 #selected_item {
