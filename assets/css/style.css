@@ -317,6 +317,33 @@ li:hover hr , li:active hr , li:visited hr {
 footer {
     background-color: #282828;
     height: 80px;
+    justify-content: space-between;
+}
+
+.left_foot {
+   align-items: center; 
+   color: grey;
+}
+
+.left_foot img {
+    height: 80px;
+    padding: 20px 10px; 
+}
+
+#song_description h5 , #song_description h6{
+   padding: 0 10px;
+   
+   font-size: 0.7rem;
+}
+
+#song_description h5 {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.left_foot i {
+    padding: 10px;
+    color: gray;
 }
 
 /* media query xs size 600px */
