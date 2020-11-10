@@ -27,12 +27,14 @@ body {
 
 .thumbnail {
     text-align: center;
-    flex-basis: 21.3vh;
+    flex-basis: 21vh;
     padding: 10px;
+    max-width: 250px;
 }
 
 .thumbnail img{
     width: 100%;
+    height: auto;
 }
 
 .thumbnail a {
@@ -530,22 +532,23 @@ footer i:hover {
     }
 
     .thumbnail {
-        
-        flex-basis: 22.2vh;     
+        flex-grow: 1;
+             
     }
 }
 
 /* media query screen size portrait tablet 601-700px */
 @media all and (min-width: 601px) and (max-width: 700px) {
     .thumbnail {   
-        flex-basis: 18vh;     
+        flex-basis: 18vh;
+        flex-grow: 1;     
     }
 }
 
 /* media query screen tablet 701-869px */
 @media all and (min-width: 701px) and (max-width: 869px) {
     .thumbnail {   
-        flex-basis: 23.3vh;     
+        flex-grow: 1;      
     }
 }
 
