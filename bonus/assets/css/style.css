@@ -27,12 +27,14 @@ body {
 
 .thumbnail {
     text-align: center;
-    flex-basis: 21.3vh;
+    flex-basis: 21vh;
     padding: 10px;
+    max-width: 250px;
 }
 
 .thumbnail img{
     width: 100%;
+    height: auto;
 }
 
 .thumbnail a {
@@ -177,8 +179,26 @@ aside h6 {
     background-color: black;
     font-size: 2.5rem;
     vertical-align: middle;
-    padding-right: 5px;
-    
+    padding-right: 5px;  
+}
+
+#playlist_name::-webkit-scrollbar {
+    width: 4px;
+}
+
+#playlist_name::-webkit-scrollbar-track {
+    background: grey;
+    border-radius: 20px;
+}
+
+#playlist_name::-webkit-scrollbar-thumb {
+    background-color: ivory;
+    border-radius: 20px;
+    border: 3px solid ivory;
+  }
+#playlist_name {
+    overflow-y: auto;
+    height: 30vh;
 }
 
 #download {   
@@ -512,20 +532,19 @@ footer i:hover {
     }
 
     .thumbnail {
-        
-        flex-basis: 22.2vh;     
+        flex-grow: 1;
+             
     }
-
     .box_for_play {
         display: none;
     }
-
 }
 
 /* media query screen size portrait tablet 601-700px */
 @media all and (min-width: 601px) and (max-width: 700px) {
     .thumbnail {   
-        flex-basis: 18vh;     
+        flex-basis: 18vh;
+        flex-grow: 1;     
     }
     .box_for_play {
         display: none;
@@ -535,7 +554,7 @@ footer i:hover {
 /* media query screen tablet 701-869px */
 @media all and (min-width: 701px) and (max-width: 869px) {
     .thumbnail {   
-        flex-basis: 23.3vh;     
+        flex-grow: 1;      
     }
     .box_for_play {
         display: none;
