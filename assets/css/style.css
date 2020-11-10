@@ -149,7 +149,8 @@ aside .activated {
 }
 
 aside h4 {
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    padding: 20px 0;    
 }
 
 aside h5 {
