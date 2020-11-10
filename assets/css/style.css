@@ -370,33 +370,76 @@ footer i:hover {
     vertical-align: sub;
 }
 
-#player .time_line div{
-    background-color: gray;
-    height: 4px;
+.slider {
+    -webkit-appearance: none;
+    height: 5px;
     width: 25vw;
     margin: 0 20px;
-    margin-top: 5px;
-    
+    background: gray;
+    opacity: 0.7; 
+    transition: opacity .2s;
+    -webkit-transition: .2s; 
+    border-radius: 10px; 
+    overflow: hidden;
  }
 
-.time_line::after {
+ .slider:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0px;
+    height: 0px;
+    background: ivory;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 5px;
+    height: 5px;
+    background: ivory;
+    cursor: pointer;
+  }
+  
+  .slider::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: ivory;
+    
+  }
+  
+  .slider::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: pointer;
+    background: ivory;
+    box-shadow: -80px 0 0 80px ivory;
+  }
+
+  .slider::-moz-range-progress {
+    background-color: ivory; 
+  }
+  
+
+.slidecontainer::after {
    content: "03:53";
    color: white;
    font-size: 0.7rem;
 }
 
-.time_line::before {
+.slidecontainer::before {
     content: "0:32";
     color: white;
    font-size: 0.7rem;
  }
 
- .time_line_short {
-    background-color: gray;
-    height: 5px;
-    width: 5vw;
-    border-radius: 5px; 
-    margin-right: 10px;  
+ .shorter {
+     width: 5vw;
  }
 
  .right_foot {
