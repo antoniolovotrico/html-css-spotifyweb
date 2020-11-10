@@ -575,6 +575,19 @@ footer i:hover {
     }
 }
 
+/* media query height size 500px */
+@media screen and (max-height:500px) {
+    #subscribe_bar {
+        display: none;
+    }
+    #album_art_menu {
+        margin-top: unset;
+        padding-top: unset;
+    }
+}
+
+
+
 
 
 
