@@ -27,7 +27,7 @@ body {
 
 .thumbnail {
     text-align: center;
-    flex-basis: 21vh;
+    flex-basis: 21.3vh;
     padding: 10px;
     max-width: 250px;
 }
@@ -330,6 +330,13 @@ li:hover hr , li:active hr , li:visited hr {
 /* recently_played section */
 #recently_played .d-flex { 
     flex-wrap: wrap;
+    overflow-y: hidden;
+    height: 350px;
+}
+
+#recently_played .thumbnail {
+    flex: 1 1 200px;
+    height: 350px;
 }
 
 /* popular section*/
@@ -540,10 +547,6 @@ footer i:hover {
     .thumbnail {
         flex-grow: 1;
         transition: ease-in-out 2s;
-             
-    }
-    .box_for_play {
-        display: none;
     }
 }
 
@@ -554,9 +557,6 @@ footer i:hover {
         flex-grow: 1; 
         transition: ease-in-out 2s;    
     }
-    .box_for_play {
-        display: none;
-    }
 }
 
 /* media query screen tablet 701-869px */
@@ -564,10 +564,7 @@ footer i:hover {
     .thumbnail {   
         flex-grow: 1;
         transition: ease-in-out 2s;      
-    }
-    .box_for_play {
-        display: none;
-    }
+    }   
 }
 
 /* media query big tablet 870-992px */
