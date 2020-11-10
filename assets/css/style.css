@@ -208,7 +208,7 @@ aside h6 {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
+    width: calc(100% - 225px);
     height: 80px;
     background-color: rgba(1, 1, 1, 0.5);
     z-index: 1;
@@ -374,7 +374,7 @@ footer i:hover {
 .slider {
     -webkit-appearance: none;
     height: 5px;
-    width: 25vw;
+    width: 20vw;
     margin: 0 20px;
     background: gray;
     opacity: 0.7; 
@@ -457,8 +457,8 @@ footer i:hover {
 /* media query xs size 600px */
 @media screen and (max-width:600px) {
     aside.main_menu { 
-        width: 10%;
-        min-width: unset;
+        max-width: 10%;
+        min-width: 10%;
     }
     aside h4 , aside h5 , aside h6 , aside .fas , #logo {
       display: none;
@@ -506,6 +506,11 @@ footer i:hover {
     #ul_utente {
         padding: unset;
     }
+
+    #subscribe_bar {
+        width: 90%;
+    }
+
     .thumbnail {
         
         flex-basis: 22.2vh;     
