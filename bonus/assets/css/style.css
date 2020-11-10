@@ -45,6 +45,11 @@ body {
     position: relative;
 }
 
+.box_for_play:hover {
+    transform: scale(1.15);
+    transition: ease-in-out 1s;
+}
+
 .box_for_play:hover .overlay{
     position: absolute;
     top: 0;
@@ -250,6 +255,7 @@ aside h6 {
 #subscribe_btn:hover {
     transform: scale(1.05);
     cursor: pointer;
+    transition: ease-in-out 1s;
 }
 
 /* album art */
@@ -533,6 +539,7 @@ footer i:hover {
 
     .thumbnail {
         flex-grow: 1;
+        transition: ease-in-out 2s;
              
     }
     .box_for_play {
@@ -544,7 +551,8 @@ footer i:hover {
 @media all and (min-width: 601px) and (max-width: 700px) {
     .thumbnail {   
         flex-basis: 18vh;
-        flex-grow: 1;     
+        flex-grow: 1; 
+        transition: ease-in-out 2s;    
     }
     .box_for_play {
         display: none;
@@ -554,7 +562,8 @@ footer i:hover {
 /* media query screen tablet 701-869px */
 @media all and (min-width: 701px) and (max-width: 869px) {
     .thumbnail {   
-        flex-grow: 1;      
+        flex-grow: 1;
+        transition: ease-in-out 2s;      
     }
     .box_for_play {
         display: none;
@@ -564,14 +573,16 @@ footer i:hover {
 /* media query big tablet 870-992px */
 @media all and (min-width: 870px) and (max-width: 991px) {
     .thumbnail {   
-        flex-basis: 16vh;     
+        flex-basis: 16vh;
+        transition: ease-in-out 2s;     
     }
 }
 
 /* media query small laptop size 992px */
 @media all and (min-width: 992px) and (max-width: 1199px) {
     .thumbnail {   
-        flex-basis: 18vh;     
+        flex-basis: 18vh;
+        transition: ease-in-out 2s;     
     }
 }
 
