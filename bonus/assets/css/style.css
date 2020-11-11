@@ -551,6 +551,16 @@ footer i:hover {
     #utente {   
         padding-bottom: 10px;
     }
+
+    .left_foot i {
+        padding: 0px 5px;
+        
+    }
+    .right_foot i {
+        padding:unset;
+        padding-left: 8px;
+        font-size: 0.7rem;
+    }
 }
 
 /* media query screen size portrait tablet 601-700px */
