@@ -357,7 +357,7 @@ footer i:hover {
 }
 
 .left_foot {
-   align-items: center;   
+   align-items: center; 
 }
 
 .left_foot img {
@@ -389,18 +389,19 @@ footer i:hover {
 }
 #player i{ 
     color: white;
-    padding: 0 8px;
+    padding: 0 5px;
     padding-bottom: 5px;
+    font-size: 0.8rem;
 }
 .fa-play-circle {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
     vertical-align: sub;
 }
 
 .slider {
     -webkit-appearance: none;
     height: 5px;
-    width: 20vw;
+    width: 19vw;
     margin: 0 20px;
     background: gray;
     opacity: 0.7; 
@@ -454,15 +455,17 @@ footer i:hover {
   
 
 .slidecontainer::after {
-   content: "03:53";
+   content: "3:53";
    color: white;
-   font-size: 0.7rem;
+   font-size: 0.6rem;
+   margin-left: -15px;
 }
 
 .slidecontainer::before {
     content: "0:32";
     color: white;
-   font-size: 0.7rem;
+    font-size: 0.6rem;
+    margin-right: -15px;
  }
 
  .shorter {
@@ -539,8 +542,10 @@ footer i:hover {
 
     .thumbnail {
         flex-grow: 1;
-        transition: ease-in-out 1s;
-             
+        transition: ease-in-out 1s;         
+    }
+    #utente {   
+        padding-bottom: 10px;
     }
 }
 

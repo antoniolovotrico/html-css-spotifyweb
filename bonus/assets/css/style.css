@@ -548,6 +548,9 @@ footer i:hover {
         flex-grow: 1;
         transition: ease-in-out 2s;
     }
+    #utente {   
+        padding-bottom: 10px;
+    }
 }
 
 /* media query screen size portrait tablet 601-700px */
